@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BlueIDE - Redirecting...</title>
+    <script>
+        // Проверяем предпочтительный язык браузера
+        const userLang = navigator.language || navigator.userLanguage;
+        
+        // Если язык русский — отправляем в папку /ru/, иначе по умолчанию в /en/
+        if (userLang.startsWith('ru')) {
+            window.location.href = './ru/index.html';
+        } else {
+            window.location.href = './en/index.html';
+        }
+    </script>
+</head>
+<body>
+    <p>Redirecting to the appropriate language version... If it doesn't work, <a href="./en/index.html">click here</a>.</p>
+</body>
+</html>
