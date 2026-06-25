@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlueIDE - Feedback and suggestions</title>
+    <link rel="stylesheet" href="https://jsdelivr.net">
+</head>
+<body>
+    <header>
+        <h1>🔵 BlueIDE - Feedback and suggestions</h1>
+        <nav>
+            <a href="index.html">Home</a> | 
+            <a href="roadmap.html">Roadmap</a> | 
+            <a href="feedback.html">Feedback and suggestions</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Leave your feedback or suggestion</h2>
+        <p>We're actively developing BlueIDE. If you're missing a feature or find a bug, let us know, and we'll add it in the next release!</p>
+
+        <!-- Замените "your_formspree_id" на реальный ID после регистрации на formspree.io -->
+        <form action="https://formspree.io" method="POST">
+            <label for="name">Your name or nickname on GitHub:</label>
+            <input type="text" id="name" name="name" required placeholder="Иван">
+
+            <label for="email">Ваш Email (для ответа):</label>
+            <input type="email" id="email" name="_replyto" required placeholder="ivan@example.com">
+
+            <label for="type">Type of appeal:</label>
+            <select id="type" name="type">
+                <option value="feature">New Feature Proposal</option>
+                <option value="bug">Error message (Bug)</option>
+                <option value="review">General review</option>
+            </select>
+
+            <label for="message">Message text:</label>
+            <textarea id="message" name="message" rows="6" required placeholder="Describe your proposal in detail..."></textarea>
+
+            <button type="submit" style="background: #0066cc; color: white;">Submit a proposal</button>
+        </form>
+    </main>
+
+    <footer>
+        <hr>
+        <p style="text-align: center; font-size: 0.9em;">&copy; 2026 BlueIDE | <a href="privacy.html">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>
