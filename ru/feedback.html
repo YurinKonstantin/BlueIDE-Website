@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlueIDE - Отзывы и предложения</title>
+    <link rel="stylesheet" href="https://jsdelivr.net">
+</head>
+<body>
+    <header>
+        <h1>🔵 BlueIDE - Обратная связь</h1>
+        <nav>
+            <a href="index.html">Главная</a> | 
+            <a href="roadmap.html">Дорожная карта</a> | 
+            <a href="feedback.html">Отзывы и предложения</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Оставьте ваш отзыв или предложение</h2>
+        <p>Мы активно развиваем BlueIDE. Если вам не хватает какой-то фичи или вы нашли баг — напишите нам, и мы добавим это в следующий релиз!</p>
+
+        <!-- Замените "your_formspree_id" на реальный ID после регистрации на formspree.io -->
+        <form action="https://formspree.io" method="POST">
+            <label for="name">Ваше имя или ник на GitHub:</label>
+            <input type="text" id="name" name="name" required placeholder="Иван">
+
+            <label for="email">Ваш Email (для ответа):</label>
+            <input type="email" id="email" name="_replyto" required placeholder="ivan@example.com">
+
+            <label for="type">Тип обращения:</label>
+            <select id="type" name="type">
+                <option value="feature">Предложение новой функции</option>
+                <option value="bug">Сообщение об ошибке (Баг)</option>
+                <option value="review">Общий отзыв</option>
+            </select>
+
+            <label for="message">Текст сообщения:</label>
+            <textarea id="message" name="message" rows="6" required placeholder="Опишите ваше предложение во всех деталях..."></textarea>
+
+            <button type="submit" style="background: #0066cc; color: white;">Отправить предложение</button>
+        </form>
+    </main>
+
+    <footer>
+        <hr>
+        <p style="text-align: center; font-size: 0.9em;">&copy; 2026 BlueIDE | <a href="privacy.html">Политика конфиденциальности</a></p>
+    </footer>
+</body>
+</html>
